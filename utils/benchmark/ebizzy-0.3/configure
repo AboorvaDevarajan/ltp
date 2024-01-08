@@ -31,7 +31,7 @@ cat <<EOF > Makefile
 all: ebizzy
 
 ebizzy: ebizzy.c
-	gcc -Wall -Wshadow ${LIBS} ${FLAGS} -o ebizzy ebizzy.c
+	gcc -Wall -Wshadow ${FLAGS} -o ebizzy ebizzy.c ${LIBS}
 
 clean:
 	rm -f ebizzy Makefile
